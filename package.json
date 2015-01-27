@@ -1,0 +1,27 @@
+{
+  "name": "zanata-base",
+  "version": "1.0.0",
+  "description": "The base CSS stylign for all Zanata applications/sites",
+  "style": "index.css",
+  "files": [
+    "index.css",
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/lukebrooker/zanata-base"
+  },
+  "author": "Luke Brooker",
+  "license": "LGPL",
+  "bugs": {
+    "url": "https://github.com/lukebrooker/zanata-base/issues"
+  },
+  "homepage": "https://github.com/lukebrooker/zanata-base",
+  "dependencies": {
+    "normalize.css": "^3.0.2"
+  }
+}
