@@ -1,9 +1,9 @@
-:root {
-  --media-figure-color: #999;
-}
-
 img {
   max-width: 100%;
+}
+
+svg {
+  max-height: 100%;
 }
 
 svg:not(:root) {
@@ -15,5 +15,5 @@ figure {
 }
 
 figcaption {
-  color: var(--media-figure-color);
+  color: #999;
 }

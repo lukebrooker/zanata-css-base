@@ -1,20 +1,4 @@
-:root {
-  --base-link-color: #4e9fdd;
-  --base-link-color-hover: color(var(--base-link-color) shade(10%));
-  --base-link-color-active: color(var(--base-link-color) shade(20%));
-}
-
 a {
-  color: var(--base-link-color);
+  color: inherit;
   text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover,
-a:focus {
-  color: var(--base-link-color-hover);
-}
-
-a:active {
-  color: var(--base-link-color-active);
 }

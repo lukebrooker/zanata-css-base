@@ -4,12 +4,8 @@
 }
 
 hr {
-  width: 100%;
-  border: 0;
-  border-bottom: var(--base-misc-hr-border);
-  border-color: var(--base-misc-hr-border-color);
-  margin: rhythm(1) 0;
-  background: transparent;
+  border: none;
+  border-top: 1px solid;
 }
 
 iframe {

@@ -1,23 +1,24 @@
+/**
+ * DOC
+ *
+ * ### Forms
+ *
+ */
+
 :root {
-  --base-form-color-placeholder: #999;
+  --base-form-color-placeholder: hsl(193, 30%, 73%);
+  --base-form-color-placeholder-focus: hsl(194, 30%, 86%);
 }
 
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: var(--base-form-color-placeholder);
-}
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: var(--base-form-color-placeholder);
-}
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: var(--base-form-color-placeholder);
-}
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: var(--base-form-color-placeholder);
-}
+/**
+ * DOC
+ *
+ * #### Button
+ *
+ * ```example
+ * <button>Button</button>
+ * ```
+ */
 
 button,
 html input[type="button"],
@@ -40,7 +41,116 @@ button {
  */
 
 button:focus {
+  outline: inherit;
+}
+
+/**
+ * DOC
+ *
+ * #### Text Fields
+ *
+ * ```example
+ * <input type="text" placeholder="Text input">
+ * ```
+ *
+ * ```example
+ * <input type="search" placeholder="Search input">
+ * ```
+ */
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--base-form-color-placeholder);
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--base-form-color-placeholder);
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--base-form-color-placeholder);
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--base-form-color-placeholder);
+}
+
+:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--base-form-color-placeholder-focus);
+}
+:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--base-form-color-placeholder-focus);
+}
+:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--base-form-color-placeholder-focus);
+}
+:focus:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--base-form-color-placeholder-focus);
+}
+
+/* Don't use `input` tag selector for less specificity */
+
+[type=text],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=time],
+[type=url],
+[type=week],
+textarea {
+  -webkit-appearance: none;
   outline: none;
+  box-shadow: inherit;
+  border: inherit;
+}
+
+[type=text],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=time],
+[type=url],
+[type=week] {
+  height: 1.5rem;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+/**
+ * DOC
+ *
+ * #### Select
+ *
+ * ```example
+ * <select>
+ *   <option>Option 1</option>
+ *   <option>Option 2</option>
+ *   <option>Option 3</option>
+ * </select>
+ * ```
+ *
+ */
+
+select {
+  line-height: 1.5rem;
 }
 
 fieldset {
@@ -49,17 +159,3 @@ fieldset {
   padding: 0;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea {
-  -webkit-appearance: none;
-  outline: none;
-}
