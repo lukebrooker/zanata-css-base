@@ -112,6 +112,7 @@ textarea {
   outline: none;
   box-shadow: inherit;
   border: inherit;
+  background-color: inherit;
 }
 
 [type=text],
