@@ -1,6 +1,6 @@
 {
   "name": "zanata-css-base",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The base CSS stylign for all Zanata applications/sites",
   "style": "index.css",
   "files": [
