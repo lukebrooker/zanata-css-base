@@ -110,8 +110,8 @@ button:focus {
 textarea {
   -webkit-appearance: none;
   outline: none;
-  box-shadow: inherit;
-  border: inherit;
+  box-shadow: none;
+  border: none;
   background-color: inherit;
 }
 
