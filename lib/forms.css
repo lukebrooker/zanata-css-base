@@ -94,6 +94,7 @@ button:focus {
 
 input {
   line-height: inherit;
+  background-color: transparent;
 }
 
 /* Don't use `input` tag selector for less specificity */
@@ -116,7 +117,7 @@ textarea {
   outline: none;
   box-shadow: none;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
 }
 
 [type=text],
