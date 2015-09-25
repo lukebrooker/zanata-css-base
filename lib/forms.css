@@ -92,6 +92,10 @@ button:focus {
   color: var(--base-form-color-placeholder-focus);
 }
 
+input {
+  line-height: inherit;
+}
+
 /* Don't use `input` tag selector for less specificity */
 
 [type=text],
